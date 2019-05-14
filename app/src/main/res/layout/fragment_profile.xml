@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="30dp"
+    android:orientation="vertical">
+
+    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profile_image"
+        android:layout_width="match_parent"
+        android:layout_height="95dp"
+        android:src="@drawable/ic_man"
+        app:civ_border_color="#0FF00000"
+        app:civ_border_width="2dp" />
+
+    <TextView
+        android:id="@+id/profileName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jean Morise"
+
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/montserrat_semibold"
+        />
+
+
+</LinearLayout>
+
+    <TextView
+        android:id="@+id/profileEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="javo@gmail.com"
+        android:paddingLeft="30dp"
+        android:textSize="16dp"
+        android:fontFamily="@font/montserrat_semibold"
+        android:drawablePadding="15dp"
+        android:drawableLeft="@drawable/ic_mail_outline"
+        android:layout_marginTop="25dp"/>
+
+    <Button
+        android:id="@+id/onOrderList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Order List"
+        android:textAlignment="textStart"
+        android:paddingLeft="30dp"
+        android:textSize="16dp"
+        android:drawablePadding="15dp"
+        android:fontFamily="@font/montserrat_semibold"
+        android:drawableLeft="@drawable/ic_list_24dp"
+        android:background="@color/white"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign out"
+        android:onClick="signOut"
+        android:textAlignment="textStart"
+        android:paddingLeft="30dp"
+        android:textSize="16dp"
+        android:drawablePadding="15dp"
+        android:fontFamily="@font/montserrat_semibold"
+        android:drawableStart="@drawable/ic_exit"
+        android:background="@color/white"/>
+
+
+
+</LinearLayout>

@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".FoodDetail">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:id="@+id/detailImage"
+            android:scaleType="centerCrop"
+            />
+        <android.support.v7.widget.CardView
+            android:layout_width="320dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="2dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="150dp"
+            android:layout_marginBottom="10dp"
+            >
+
+        <LinearLayout
+            android:padding="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/detailName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/blackish"
+                android:text="Burger King"
+                android:textSize="22sp"
+                android:fontFamily="@font/montserrat_semibold"
+                />
+            <TextView
+                android:id="@+id/detailPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/grey"
+                android:text="20000 sum"
+                android:textSize="16sp"
+                android:fontFamily="@font/montserrat_regular"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:id="@+id/detailContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/blackish"
+                android:text="20000 sum dasd asd as das d"
+                android:textSize="12sp"
+                android:fontFamily="@font/montserrat_regular"
+                android:textStyle="bold"
+                />
+        </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/blackish"
+            android:textSize="18sp"
+            android:layout_gravity="center"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="Amount: "/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:orientation="horizontal"
+            >
+            <android.support.design.button.MaterialButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+                app:rippleColor="@color/white"
+                android:elevation="2dp"
+                android:text=" - "
+                android:padding="10dp"
+                android:textSize="15dp"
+                android:textColor="@color/white"
+                app:cornerRadius="50dp"
+                android:fontFamily="@font/montserrat_semibold"
+                android:backgroundTint="@color/colorPrimary"
+                android:onClick="onSubtractAmount"
+                />
+            <TextView
+                android:id="@+id/detailAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:textSize="18sp"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text="1"
+                />
+
+
+            <android.support.design.button.MaterialButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onAddAmount"
+                android:textAppearance="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+                app:rippleColor="@color/white"
+                android:elevation="2dp"
+                android:textSize="15dp"
+                android:text= " + "
+                android:padding="10dp"
+                android:textColor="@color/white"
+                app:cornerRadius="50dp"
+                android:fontFamily="@font/montserrat_semibold"
+                android:backgroundTint="@color/colorPrimary"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+    <EditText
+        android:id="@+id/detailAddress"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Address"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/blackish"
+            android:textSize="20sp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="Total price: "/>
+
+        <TextView
+            android:id="@+id/totalPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="30000 Sum"
+            android:gravity="end"
+            />
+
+    </LinearLayout>
+
+    <android.support.design.button.MaterialButton
+        android:id="@+id/onOrder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+        android:textSize="17sp"
+        android:text="ORDER"
+        app:rippleColor="@color/white"
+        android:gravity="center"
+        android:elevation="2dp"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        app:backgroundTint="@color/colorPrimary"
+        app:cornerRadius="30dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/montserrat_semibold"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        />
+</LinearLayout>

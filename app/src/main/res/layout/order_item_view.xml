@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/holo_blue_dark"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="1dp"
+    android:layout_marginStart="15dp"
+    android:layout_marginEnd="15dp"
+    android:layout_marginTop="15dp">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/white"
+        android:paddingStart="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp">
+            <TextView
+                android:id="@+id/orderUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_semibold"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:text="dalerleo"
+                android:textColor="@color/blackish"
+                android:textSize="18sp" />
+            <TextView
+                android:id="@+id/orderName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                app:layout_constraintTop_toBottomOf="@id/orderUser"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text="Burger King"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/orderAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="Amount: 10"
+                app:layout_constraintTop_toBottomOf="@id/orderName"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/orderPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/orderAmount"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/montserrat_regular"
+                android:text="20000 sum"
+                android:textAllCaps="true"
+                android:textColor="#cacbcc"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+        <LinearLayout
+            android:id="@+id/actionButtons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/orderStatus"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <android.support.design.button.MaterialButton
+                android:id="@+id/cancelBtn"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_semibold"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="5dp"
+                android:text="cancel"
+                android:textAppearance="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+                android:textColor="@color/white"
+                android:textSize="17sp"
+                app:backgroundTint="@color/grey"
+                app:cornerRadius="40dp"
+                app:layout_constraintEnd_toStartOf="@+id/orderStatus"
+                app:layout_constraintTop_toBottomOf="@+id/acceptBtn"
+                app:rippleColor="@color/white" />
+
+            <android.support.design.button.MaterialButton
+                android:id="@+id/acceptBtn"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+
+                android:fontFamily="@font/montserrat_semibold"
+                android:gravity="center"
+                android:paddingLeft="15dp"
+                android:paddingTop="5dp"
+                android:paddingRight="15dp"
+                android:paddingBottom="5dp"
+                android:text="Accept"
+                android:textAppearance="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:backgroundTint="@color/colorPrimary"
+                app:cornerRadius="40dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:rippleColor="@color/white" />
+
+        </LinearLayout>
+        <View
+            android:id="@+id/orderStatus"
+            android:layout_width="5dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center|end"
+            android:background="@color/colorPrimary"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/orderAddress"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Ziyolilar 29 T fsddfdfd fd f df d fdf df oshkent"
+            app:layout_constraintEnd_toStartOf="@+id/actionButtons"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/orderPrice" />
+    </android.support.constraint.ConstraintLayout>
+</android.support.v7.widget.CardView>

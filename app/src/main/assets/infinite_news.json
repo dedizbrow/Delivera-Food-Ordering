@@ -1,0 +1,50 @@
+[
+  {
+    "title" : "Bigger BIG",
+    "image_url" : "https://www.goodfood.com.au/content/dam/images/h/0/f/a/q/i/image.related.wideLandscape.940x529.h0fa4n.png/1515456591895.jpg",
+    "price" : "20 000 sum",
+    "time" : "1 hours ago"
+  },
+  {
+    "title" : "Fresher BIG",
+    "image_url" : "https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "price" : "15 000 sum",
+    "time" : "2 hours ago"
+  },
+  {
+    "title" : "Veganer Burg",
+    "image_url" : "https://images.pexels.com/photos/5938/food-salad-healthy-lunch.jpg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "price" : "18 000",
+    "time" : "3 hours ago"
+  },
+  {
+    "title" : "Fresher BIG",
+    "image_url" : "https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "price" : "15 000 sum",
+    "time" : "2 hours ago"
+  },
+  {
+    "title" : "Fresher BIG",
+    "image_url" : "https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "price" : "15 000 sum",
+    "time" : "2 hours ago"
+  },
+  {
+    "title" : "Veganer Burg",
+    "image_url" : "https://images.pexels.com/photos/5938/food-salad-healthy-lunch.jpg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "price" : "18 000",
+    "time" : "3 hours ago"
+  },
+  {
+    "title" : "Fresher BIG",
+    "image_url" : "https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "price" : "15 000 sum",
+    "time" : "2 hours ago"
+  },
+  {
+    "title" : "Veganer Burg",
+    "image_url" : "https://images.pexels.com/photos/5938/food-salad-healthy-lunch.jpg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "price" : "18 000",
+    "time" : "3 hours ago"
+  }
+]

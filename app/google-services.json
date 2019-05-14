@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "784842767022",
+    "firebase_url": "https://food-ordering-64928.firebaseio.com",
+    "project_id": "food-ordering-64928",
+    "storage_bucket": "food-ordering-64928.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:784842767022:android:4ccb6ebb5cd7eeb4",
+        "android_client_info": {
+          "package_name": "com.dalerleo.foodordering"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "784842767022-uukkosp9hlinr6vn9vj0jvjomup8dq85.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDxTkq2CbJzq8zAjXvxbkhew97g0uQ4qTw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
